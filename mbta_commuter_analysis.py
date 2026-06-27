@@ -42,7 +42,7 @@ df_mbta = df_mbta.groupby('date').agg({'estimated_boardings': 'sum'}).reset_inde
 df_mbta.to_csv("data/processed/mbta_commuter_rail.csv", index=False)
 
 # -------------------------------------------------------------------------- #
-# Clean up weather data
+# Clean up and merge holiday data
 # -------------------------------------------------------------------------- #
 # Read in and join holiday csv files
 df_fed = pd.read_csv("data/raw/fed-holidays.csv")
