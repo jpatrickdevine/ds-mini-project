@@ -1,2 +1,6 @@
 pandas
 matplotlib
+numpy
+argparse
+scikit-learn
+tensorflow
